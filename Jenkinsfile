@@ -5,12 +5,6 @@ pipeline {
         maven 'Maven'
     }
 
-    stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/MeenakshiSelvaraj/demo-devops-app.git'
-            }
         }
 
         stage('Build') {
