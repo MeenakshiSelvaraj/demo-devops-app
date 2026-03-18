@@ -1,11 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven'
-    }
-
-        }
+    stages {
 
         stage('Build') {
             steps {
@@ -18,5 +14,6 @@ pipeline {
                 sh 'docker build -t demo-app .'
             }
         }
+
     }
 }
