@@ -15,5 +15,10 @@ pipeline {
             }
         }
 
+        stage('Run Container') {
+    steps {
+        sh 'docker run -d -p 8085:8080 demo-app'
+    }
+}
     }
 }
